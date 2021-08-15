@@ -27,6 +27,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [],
@@ -60,6 +61,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     MatGridListModule,
     MatTabsModule,
     MatProgressBarModule,
+    MatTooltipModule,
+    MatIconModule
   ],
   providers: [
     { provide: MatPaginatorIntl, useClass: MatPaginatorImpl },
