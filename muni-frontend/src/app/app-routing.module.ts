@@ -9,9 +9,15 @@ const routes: Routes = [
     redirectTo: 'home'
   },
 
+  // {
+  //   path: 'home',
+  //   component: HomeFormularioComponent
+  // },
+
   {
     path: 'home',
-    component: HomeFormularioComponent
+    component: HomeFormularioComponent,
+    loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule),
   },
 ];
 

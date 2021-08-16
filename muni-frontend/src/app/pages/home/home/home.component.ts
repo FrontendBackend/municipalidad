@@ -12,4 +12,10 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  slides = [
+    { 'image': 'http://www.municanete.gob.pe/muni/carrousel/img/FOTO1.jpg' },
+    { 'image': 'http://www.municanete.gob.pe/muni/carrousel/img/FOTO2.jpg' },
+    { 'image': 'http://www.municanete.gob.pe/muni/carrousel/img/FOTO3.jpg' },
+    { 'image': 'http://www.municanete.gob.pe/muni/carrousel/img/FOTO4.jpg' }
+  ];
 }

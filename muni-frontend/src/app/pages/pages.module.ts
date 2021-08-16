@@ -5,10 +5,15 @@ import { PagesRoutingModule } from './pages-routing.module';
 import { MaterialModule } from '../material/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { HomeComponent } from './home/home/home.component';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    HomeComponent,
+  ],
   imports: [
     CommonModule,
     PagesRoutingModule,
@@ -16,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    // FlexLayoutModule,
+    FlexLayoutModule,
+    MatCarouselModule,
     // PdfViewerModule,
   ]
 })

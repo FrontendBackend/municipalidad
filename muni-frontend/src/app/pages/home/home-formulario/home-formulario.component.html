@@ -1,10 +1,7 @@
 <div class="example-container">
   <mat-toolbar color="primary" class="example-toolbar">
 
-    <div>
-      <img mat-card-image src="../../../../assets/img/escudo_mpc_png12.png" alt="escudo de cañete" width="125"
-        height="50">
-    </div>
+    <img src="../../../../assets/img/escudo_mpc_png12.png" alt="escudo de cañete" width="125" height="50">
 
 
     <!-- <div>
@@ -28,7 +25,126 @@
 
   </mat-toolbar>
 
+  <mat-toolbar color="primary" class="example-toolbar center-content">
+    <button mat-button routerLink="/home">
+      <mat-icon>home</mat-icon>
+      INICIO
+    </button>
+
+    <button mat-button [matMenuTriggerFor]="menu">
+      <mat-icon>maps_home_work</mat-icon>
+      MUNICIPALIDAD
+    </button>
+
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/pages/perfil">
+        <mat-icon>account_box</mat-icon>
+        <span>Mi Perfil</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Cerrar Sesión</span>
+      </button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="transparencia">
+      <mat-icon>search</mat-icon>
+      TRANSPARENCIA
+    </button>
+
+    <mat-menu #transparencia="matMenu">
+      <button mat-menu-item routerLink="/pages/perfil">
+        <mat-icon>account_box</mat-icon>
+        <span>Mi Perfil</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Cerrar Sesión</span>
+      </button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="publicaciones">
+      <mat-icon>article</mat-icon>
+      PUBLICACIONES
+    </button>
+
+    <mat-menu #publicaciones="matMenu">
+      <button mat-menu-item routerLink="/pages/perfil">
+        <mat-icon>account_box</mat-icon>
+        <span>Mi Perfil</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Cerrar Sesión</span>
+      </button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="turismo">
+      <mat-icon>photo_camera</mat-icon>
+      TURISMO
+    </button>
+
+    <mat-menu #turismo="matMenu">
+      <button mat-menu-item routerLink="/home/inicio">
+        <mat-icon>account_box</mat-icon>
+        <span>Mi Perfil</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Cerrar Sesión</span>
+      </button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="tramites">
+      <mat-icon>thumb_up</mat-icon>
+      TRÁMITES
+    </button>
+
+    <mat-menu #tramites="matMenu">
+      <button mat-menu-item routerLink="/pages/perfil">
+        <mat-icon>account_box</mat-icon>
+        <span>Mi Perfil</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Cerrar Sesión</span>
+      </button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="resursos">
+      <mat-icon>account_tree</mat-icon>
+      RECURSOS
+    </button>
+
+    <mat-menu #resursos="matMenu">
+      <button mat-menu-item routerLink="/pages/perfil">
+        <mat-icon>account_box</mat-icon>
+        <span>Mi Perfil</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Cerrar Sesión</span>
+      </button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="consultas">
+      <mat-icon>laptop</mat-icon>
+      CONSULTAS
+    </button>
+
+    <mat-menu #consultas="matMenu">
+      <button mat-menu-item routerLink="/pages/perfil">
+        <mat-icon>account_box</mat-icon>
+        <span>Mi Perfil</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Cerrar Sesión</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar>
   <mat-sidenav-container class="example-sidenav-container">
+
     <mat-sidenav-content>
       <!-- <mat-grid-list cols="1" rowHeight="100px">
         <mat-grid-tile>
@@ -36,128 +152,9 @@
         </mat-grid-tile>
       </mat-grid-list> -->
 
-      <div fxFlex>
-        <mat-toolbar color="primary" class="example-toolbar center-content">
-          <button mat-button>
-            <mat-icon>home</mat-icon>
-            INICIO
-          </button>
 
-          <button mat-button [matMenuTriggerFor]="menu">
-            <mat-icon>maps_home_work</mat-icon>
-            MUNICIPALIDAD
-          </button>
 
-          <mat-menu #menu="matMenu">
-            <button mat-menu-item routerLink="/pages/perfil">
-              <mat-icon>account_box</mat-icon>
-              <span>Mi Perfil</span>
-            </button>
-            <button mat-menu-item>
-              <mat-icon>exit_to_app</mat-icon>
-              <span>Cerrar Sesión</span>
-            </button>
-          </mat-menu>
-
-          <button mat-button [matMenuTriggerFor]="transparencia">
-            <mat-icon>search</mat-icon>
-            TRANSPARENCIA
-          </button>
-
-          <mat-menu #transparencia="matMenu">
-            <button mat-menu-item routerLink="/pages/perfil">
-              <mat-icon>account_box</mat-icon>
-              <span>Mi Perfil</span>
-            </button>
-            <button mat-menu-item>
-              <mat-icon>exit_to_app</mat-icon>
-              <span>Cerrar Sesión</span>
-            </button>
-          </mat-menu>
-
-          <button mat-button [matMenuTriggerFor]="publicaciones">
-            <mat-icon>article</mat-icon>
-            PUBLICACIONES
-          </button>
-
-          <mat-menu #publicaciones="matMenu">
-            <button mat-menu-item routerLink="/pages/perfil">
-              <mat-icon>account_box</mat-icon>
-              <span>Mi Perfil</span>
-            </button>
-            <button mat-menu-item>
-              <mat-icon>exit_to_app</mat-icon>
-              <span>Cerrar Sesión</span>
-            </button>
-          </mat-menu>
-
-          <button mat-button [matMenuTriggerFor]="turismo">
-            <mat-icon>photo_camera</mat-icon>
-            TURISMO
-          </button>
-
-          <mat-menu #turismo="matMenu">
-            <button mat-menu-item routerLink="/pages/perfil">
-              <mat-icon>account_box</mat-icon>
-              <span>Mi Perfil</span>
-            </button>
-            <button mat-menu-item>
-              <mat-icon>exit_to_app</mat-icon>
-              <span>Cerrar Sesión</span>
-            </button>
-          </mat-menu>
-
-          <button mat-button [matMenuTriggerFor]="tramites">
-            <mat-icon>thumb_up</mat-icon>
-            TRÁMITES
-          </button>
-
-          <mat-menu #tramites="matMenu">
-            <button mat-menu-item routerLink="/pages/perfil">
-              <mat-icon>account_box</mat-icon>
-              <span>Mi Perfil</span>
-            </button>
-            <button mat-menu-item>
-              <mat-icon>exit_to_app</mat-icon>
-              <span>Cerrar Sesión</span>
-            </button>
-          </mat-menu>
-
-          <button mat-button [matMenuTriggerFor]="resursos">
-            <mat-icon>account_tree</mat-icon>
-            RECURSOS
-          </button>
-
-          <mat-menu #resursos="matMenu">
-            <button mat-menu-item routerLink="/pages/perfil">
-              <mat-icon>account_box</mat-icon>
-              <span>Mi Perfil</span>
-            </button>
-            <button mat-menu-item>
-              <mat-icon>exit_to_app</mat-icon>
-              <span>Cerrar Sesión</span>
-            </button>
-          </mat-menu>
-
-          <button mat-button [matMenuTriggerFor]="consultas">
-            <mat-icon>laptop</mat-icon>
-            CONSULTAS
-          </button>
-
-          <mat-menu #consultas="matMenu">
-            <button mat-menu-item routerLink="/pages/perfil">
-              <mat-icon>account_box</mat-icon>
-              <span>Mi Perfil</span>
-            </button>
-            <button mat-menu-item>
-              <mat-icon>exit_to_app</mat-icon>
-              <span>Cerrar Sesión</span>
-            </button>
-          </mat-menu>
-        </mat-toolbar>
-      </div>
-
-      <!-- <router-outlet></router-outlet> -->
+      <router-outlet></router-outlet>
 
     </mat-sidenav-content>
 
