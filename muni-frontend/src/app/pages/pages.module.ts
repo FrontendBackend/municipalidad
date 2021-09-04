@@ -8,7 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HomeComponent } from './home/home/home.component';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
-
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 @NgModule({
   declarations: [
